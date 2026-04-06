@@ -2,13 +2,11 @@ import { Facebook, Instagram } from "lucide-react";
 import team1 from "@/assets/team-1.jpg";
 import team2 from "@/assets/team-2.jpg";
 import team3 from "@/assets/team-3.jpg";
-import team4 from "@/assets/team-4.jpg";
 
 const teamMembers = [
   { img: team1, name: "রাকিব হাসান", role: "প্রধান ফটোগ্রাফার" },
   { img: team2, name: "তানভীর আহমেদ", role: "সিনেম্যাটোগ্রাফার" },
   { img: team3, name: "ফারজানা আক্তার", role: "ফটো এডিটর" },
-  { img: team4, name: "সাকিব রহমান", role: "ড্রোন অপারেটর" },
 ];
 
 const TeamSection = () => {
