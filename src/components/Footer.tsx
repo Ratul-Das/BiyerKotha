@@ -8,8 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div>
-            <a href="#home" className="inline-block">
-              <img src={logo} alt="বিয়ের কথা" className="h-14 w-auto" />
+            <a href="#home" className="inline-flex items-center gap-2">
+              <img src={logo} alt="বিয়ের কথা" className="h-12 w-auto" />
+              <span className="text-2xl font-bold text-gradient-gold">বিয়ের কথা</span>
             </a>
             <p className="text-muted-foreground text-sm mt-3 leading-relaxed">
               বাংলাদেশের প্রিমিয়াম ফটোগ্রাফি ও সিনেম্যাটোগ্রাফি স্টুডিও। আপনার বিশেষ মুহূর্তগুলো চিরস্মরণীয় করে রাখুন।
