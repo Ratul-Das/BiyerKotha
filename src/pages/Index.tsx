@@ -6,6 +6,7 @@ import PhotoGallery from "@/components/PhotoGallery";
 import VideoGallery from "@/components/VideoGallery";
 import TeamSection from "@/components/TeamSection";
 import PackagesSection from "@/components/PackagesSection";
+import CorporatePackagesSection from "@/components/CorporatePackagesSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
