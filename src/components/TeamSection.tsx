@@ -24,7 +24,7 @@ const TeamSection = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="group bg-card border border-border rounded-xl overflow-hidden hover:border-primary/40 transition-all duration-500"
+              className="group bg-card border border-border rounded-xl overflow-hidden hover:border-primary/40 transition-all duration-500 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-sm"
             >
               <div className="relative overflow-hidden aspect-[4/5]">
                 <img
