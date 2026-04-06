@@ -4,8 +4,9 @@ import { Menu, X } from "lucide-react";
 const navItems = [
   { label: "হোম", href: "#home" },
   { label: "সেবাসমূহ", href: "#services" },
-  { label: "পোর্টফোলিও", href: "#portfolio" },
-  { label: "আমাদের সম্পর্কে", href: "#about" },
+  { label: "গ্যালারি", href: "#photo-gallery" },
+  { label: "প্যাকেজ", href: "#packages" },
+  { label: "টিম", href: "#team" },
   { label: "যোগাযোগ", href: "#contact" },
 ];
 
