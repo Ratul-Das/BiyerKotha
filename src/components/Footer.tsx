@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <a href="#home" className="text-2xl font-bold text-gradient-gold">
-              ফ্রেমক্রাফট
+              বিয়ের কথা
             </a>
             <p className="text-muted-foreground text-sm mt-3 leading-relaxed">
               বাংলাদেশের প্রিমিয়াম ফটোগ্রাফি ও সিনেম্যাটোগ্রাফি স্টুডিও। আপনার বিশেষ মুহূর্তগুলো চিরস্মরণীয় করে রাখুন।
@@ -80,7 +80,7 @@ const Footer = () => {
 
         <div className="border-t border-border pt-6 text-center">
           <p className="text-muted-foreground text-sm">
-            © ২০২৬ ফ্রেমক্রাফট। সর্বস্বত্ব সংরক্ষিত।
+            © ২০২৬ বিয়ের কথা। সর্বস্বত্ব সংরক্ষিত।
           </p>
         </div>
       </div>
