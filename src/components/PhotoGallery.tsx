@@ -6,12 +6,12 @@ import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
 
 const photos = [
-  { img: gallery1, title: "হিন্দু বিবাহ", w: 800, h: 600 },
-  { img: gallery2, title: "মুসলিম নিকাহ", w: 800, h: 600 },
-  { img: gallery3, title: "আউটডোর পোর্ট্রেট", w: 800, h: 600 },
-  { img: gallery4, title: "ইভেন্ট কাভারেজ", w: 800, h: 600 },
-  { img: gallery5, title: "হলুদ অনুষ্ঠান", w: 600, h: 800 },
-  { img: gallery6, title: "বেবি ফটোশুট", w: 600, h: 800 },
+  { img: gallery1, title: "মুসলিম বিবাহ", w: 800, h: 533 },
+  { img: gallery2, title: "হিন্দু বিবাহ", w: 800, h: 533 },
+  { img: gallery3, title: "বার্থডে ফটোশুট", w: 800, h: 533 },
+  { img: gallery4, title: "নিকাহ মুহূর্ত", w: 800, h: 700 },
+  { img: gallery5, title: "বর-কনে পোর্ট্রেট", w: 600, h: 800 },
+  { img: gallery6, title: "কাপল ফটোগ্রাফি", w: 600, h: 800 },
 ];
 
 const PhotoGallery = () => {
