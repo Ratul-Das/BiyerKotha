@@ -4,9 +4,9 @@ import team2 from "@/assets/team-2.jpg";
 import team3 from "@/assets/team-3.jpg";
 
 const teamMembers = [
-  { img: team1, name: "রাকিব হাসান", role: "প্রধান ফটোগ্রাফার" },
-  { img: team2, name: "তানভীর আহমেদ", role: "সিনেম্যাটোগ্রাফার" },
-  { img: team3, name: "ফারজানা আক্তার", role: "ফটো এডিটর" },
+  { img: team1, name: "রাতুল দাস", role: "চিফ সিনেমাটোগ্রাফার, সহ-প্রতিষ্ঠাতা ও জেনারেল ম্যানেজার (জি. এম)" },
+  { img: team2, name: "মোঃ ওসমান খান", role: "চিফ ফটোগ্রাফার, সহ-প্রতিষ্ঠাতা ও ম্যানেজিং ডিরেক্টর (এম. ডি)" },
+  { img: team3, name: "খোরশেদ আলম রনি", role: "সহ-প্রতিষ্ঠাতা ও চিফ এক্সিকিউটিং অফিসার (সি. ই. ও)" },
 ];
 
 const TeamSection = () => {
