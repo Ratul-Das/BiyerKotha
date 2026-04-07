@@ -33,7 +33,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">ইমেইল</p>
-                  <p className="text-foreground font-medium">info@framecraft.com.bd</p>
+                  <p className="text-foreground font-medium">biyerkotha444@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -42,7 +42,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">ঠিকানা</p>
-                  <p className="text-foreground font-medium">ধানমন্ডি, ঢাকা, বাংলাদেশ</p>
+                  <p className="text-foreground font-medium">মিরের বাজার, পূবাইল, গাজীপুর</p>
                 </div>
               </div>
             </div>
