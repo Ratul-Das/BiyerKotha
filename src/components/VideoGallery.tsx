@@ -1,9 +1,9 @@
 import { Play } from "lucide-react";
 
 const videos = [
-  { id: "dQw4w9WgXcQ", title: "সিনেম্যাটিক বিবাহ ট্রেইলার" },
-  { id: "dQw4w9WgXcQ", title: "মুসলিম নিকাহ হাইলাইটস" },
-  { id: "dQw4w9WgXcQ", title: "হিন্দু বিবাহ সিনেমা" },
+  { id: "I7yqxGuP6t4", title: "সিনেম্যাটিক বিবাহ ট্রেইলার" },
+  { id: "qbHTaZVjxBE", title: "মুসলিম নিকাহ হাইলাইটস" },
+  { id: "ZpNNfbkgzJI", title: "হিন্দু বিবাহ সিনেমা" },
 ];
 
 const VideoGallery = () => {
