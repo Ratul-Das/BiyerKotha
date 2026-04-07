@@ -19,23 +19,26 @@ const VideoGallery = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {videos.map((video, index) => (
-            <div
+            <a
               key={index}
-              className="group relative overflow-hidden rounded-xl aspect-video bg-card border border-border hover:border-primary/40 transition-all duration-500"
+              href={`https://youtu.be/${video.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative overflow-hidden rounded-xl aspect-video bg-card border border-border hover:border-primary/40 transition-all duration-500 cursor-pointer"
             >
               <img
-                src={`https://img.youtube.com/vi/${video.id}/hqdefault.jpg`}
+                src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
                 alt={video.title}
                 loading="lazy"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-background/50 flex flex-col items-center justify-center gap-3">
+              <div className="absolute inset-0 bg-background/50 flex flex-col items-center justify-center gap-3 group-hover:bg-background/40 transition-colors">
                 <div className="w-16 h-16 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center group-hover:bg-primary/30 transition-colors">
                   <Play className="w-7 h-7 text-primary ml-1" />
                 </div>
                 <h3 className="text-foreground font-bold text-sm">{video.title}</h3>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
