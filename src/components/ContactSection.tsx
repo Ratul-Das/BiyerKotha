@@ -24,7 +24,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">ফোন</p>
-                  <p className="text-foreground font-medium">০১৮৯০-১৮৯৯০১</p>
+                  <p className="text-foreground font-medium">01890-189901</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
