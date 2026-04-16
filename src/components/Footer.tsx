@@ -16,13 +16,10 @@ const Footer = () => {
               বাংলাদেশের প্রিমিয়াম ফটোগ্রাফি ও সিনেম্যাটোগ্রাফি স্টুডিও। আপনার বিশেষ মুহূর্তগুলো চিরস্মরণীয় করে রাখুন।
             </p>
             <div className="flex gap-3 mt-5">
-              <a href="#" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
+              <a href="https://www.facebook.com/BiyerKothaa" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
+              <a href="https://www.youtube.com/@BiyerKotha" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
                 <Youtube size={18} />
               </a>
             </div>
