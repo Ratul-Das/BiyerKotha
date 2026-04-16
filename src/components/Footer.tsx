@@ -19,7 +19,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/BiyerKothaa" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
                 <Facebook size={18} />
               </a>
-              <a href="https://www.youtube.com/@BiyerKotha" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
+              <a href="https://www.youtube.com/channel/UCdGATE1SvSqAXG2qOXRaMFg" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
                 <Youtube size={18} />
               </a>
             </div>
