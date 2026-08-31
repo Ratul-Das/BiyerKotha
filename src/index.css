@@ -6,80 +6,59 @@
 
 @layer base {
   :root {
-    --background: 220 20% 6%;
-    --foreground: 40 20% 92%;
-
-    --card: 220 18% 10%;
-    --card-foreground: 40 20% 92%;
-
-    --popover: 220 18% 10%;
-    --popover-foreground: 40 20% 92%;
-
-    --primary: 38 80% 55%;
-    --primary-foreground: 220 20% 6%;
-
-    --secondary: 220 15% 16%;
-    --secondary-foreground: 40 20% 92%;
-
-    --muted: 220 15% 14%;
-    --muted-foreground: 220 10% 55%;
-
-    --accent: 38 60% 45%;
-    --accent-foreground: 220 20% 6%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 220 15% 18%;
-    --input: 220 15% 18%;
-    --ring: 38 80% 55%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 220 18% 8%;
-    --sidebar-foreground: 40 20% 92%;
-    --sidebar-primary: 38 80% 55%;
-    --sidebar-primary-foreground: 220 20% 6%;
-    --sidebar-accent: 220 15% 14%;
-    --sidebar-accent-foreground: 40 20% 92%;
-    --sidebar-border: 220 15% 18%;
-    --sidebar-ring: 38 80% 55%;
-
-    --gold-glow: 38 90% 60%;
-    --hero-overlay: 220 20% 6%;
+    --background: 24 10% 5%;
+    --foreground: 40 30% 96%;
+    --card: 24 8% 8%;
+    --card-foreground: 40 30% 96%;
+    --popover: 24 8% 8%;
+    --popover-foreground: 40 30% 96%;
+    --primary: 43 74% 52%;
+    --primary-foreground: 24 10% 5%;
+    --secondary: 24 6% 14%;
+    --secondary-foreground: 40 30% 96%;
+    --muted: 24 6% 14%;
+    --muted-foreground: 40 10% 65%;
+    --accent: 43 74% 52%;
+    --accent-foreground: 24 10% 5%;
+    --destructive: 0 62% 47%;
+    --destructive-foreground: 40 30% 96%;
+    --border: 43 30% 20%;
+    --input: 43 20% 18%;
+    --ring: 43 74% 52%;
+    --radius: 0.75rem;
+    --sidebar-background: 24 8% 8%;
+    --sidebar-foreground: 40 30% 96%;
+    --sidebar-primary: 43 74% 52%;
+    --sidebar-primary-foreground: 24 10% 5%;
+    --sidebar-accent: 24 6% 14%;
+    --sidebar-accent-foreground: 40 30% 96%;
+    --sidebar-border: 43 30% 20%;
+    --sidebar-ring: 43 74% 52%;
   }
+}
 
+@layer base {
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
     font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 500;
   }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 700;
+  html {
+    scroll-behavior: smooth;
   }
 }
 
-@layer utilities {
-  .text-gradient-gold {
+@layer components {
+  .gold-text {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(38 80% 55%), hsl(38 90% 70%), hsl(38 80% 55%));
+    background-image: linear-gradient(135deg, hsl(43 74% 62%), hsl(43 90% 45%), hsl(45 80% 65%));
   }
-
-  .glow-gold {
-    box-shadow: 0 0 30px -5px hsl(38 80% 55% / 0.3);
+  .gold-border {
+    border: 1px solid hsl(43 74% 52% / 0.4);
   }
-
-  .border-gold-subtle {
-    border-color: hsl(38 80% 55% / 0.2);
+  .section-title {
+    @apply text-3xl md:text-5xl font-bold text-center;
   }
-}
-
-html {
-  scroll-behavior: smooth;
 }

@@ -2,57 +2,42 @@ import { useState } from "react";
 import { Play } from "lucide-react";
 
 const videos = [
-  { id: "I7yqxGuP6t4", title: "সিনেম্যাটিক বিবাহ ট্রেইলার" },
-  { id: "qbHTaZVjxBE", title: "মুসলিম নিকাহ হাইলাইটস" },
-  { id: "ZpNNfbkgzJI", title: "হিন্দু বিবাহ সিনেমা" },
+  { id: "I7yqxGuP6t4", title: "ওয়েডিং সিনেমাটিক ফিল্ম" },
+  { id: "qbHTaZVjxBE", title: "বিয়ের হাইলাইট ভিডিও" },
+  { id: "ZpNNfbkgzJI", title: "স্পেশাল মুহূর্ত" },
 ];
 
 const VideoGallery = () => {
   const [playing, setPlaying] = useState<string | null>(null);
-
   return (
-    <section id="video-gallery" className="py-24 bg-secondary/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <p className="text-primary text-sm tracking-[0.2em] uppercase mb-3">ভিডিও গ্যালারি</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            আমাদের <span className="text-gradient-gold">ভিডিও সংকলন</span>
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {videos.map((video, index) => (
-            <div
-              key={index}
-              className="relative overflow-hidden rounded-xl aspect-video bg-card border border-border hover:border-primary/40 transition-all duration-500"
-            >
-              {playing === video.id ? (
+    <section id="videos" className="py-24 bg-card">
+      <div className="container">
+        <h2 className="section-title mb-4">ভিডিও <span className="gold-text">গ্যালারি</span></h2>
+        <p className="text-center text-muted-foreground mb-12">আমাদের সিনেমাটিক কাজের নমুনা</p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {videos.map((v) => (
+            <div key={v.id} className="rounded-2xl overflow-hidden gold-border bg-background">
+              {playing === v.id ? (
                 <iframe
-                  src={`https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`}
-                  title={video.title}
+                  className="w-full aspect-video"
+                  src={`https://www.youtube.com/embed/${v.id}?autoplay=1`}
+                  title={v.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-full absolute inset-0"
                 />
               ) : (
                 <button
-                  onClick={() => setPlaying(video.id)}
-                  className="w-full h-full group cursor-pointer"
+                  className="relative block w-full group"
+                  onClick={() => setPlaying(v.id)}
+                  aria-label={`${v.title} চালান`}
                 >
-                  <img
-                    src={`https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`}
-                    alt={video.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-background/50 flex flex-col items-center justify-center gap-3 group-hover:bg-background/40 transition-colors">
-                    <div className="w-16 h-16 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                      <Play className="w-7 h-7 text-primary ml-1" />
-                    </div>
-                    <h3 className="text-foreground font-bold text-sm">{video.title}</h3>
-                  </div>
+                  <img src={`https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`} alt={v.title} loading="lazy" className="w-full aspect-video object-cover" />
+                  <span className="absolute inset-0 flex items-center justify-center bg-background/40 group-hover:bg-background/20 transition-colors">
+                    <span className="bg-primary text-primary-foreground rounded-full p-4"><Play className="w-8 h-8" /></span>
+                  </span>
                 </button>
               )}
+              <p className="p-4 text-center font-semibold">{v.title}</p>
             </div>
           ))}
         </div>

@@ -1,66 +1,47 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.png";
 
-const navItems = [
-  { label: "হোম", href: "#home" },
-  { label: "সেবাসমূহ", href: "#services" },
-  { label: "গ্যালারি", href: "#photo-gallery" },
-  { label: "প্যাকেজ", href: "#packages" },
-  { label: "টিম", href: "#team" },
-  { label: "যোগাযোগ", href: "#contact" },
+const LOGO = "/__l5e/assets-v1/e2f955b5-481a-4942-bf12-35c65f5b1a48/logo.png";
+
+const links = [
+  { href: "#home", label: "হোম" },
+  { href: "#about", label: "আমাদের সম্পর্কে" },
+  { href: "#services", label: "সেবা" },
+  { href: "#portfolio", label: "পোর্টফোলিও" },
+  { href: "#gallery", label: "ফটো গ্যালারি" },
+  { href: "#videos", label: "ভিডিও গ্যালারি" },
+  { href: "#team", label: "টিম" },
+  { href: "#packages", label: "প্যাকেজ" },
+  { href: "#contact", label: "যোগাযোগ" },
 ];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+  const [open, setOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
-      <div className="container mx-auto px-4 flex items-center justify-between h-16">
-        <a href="#home" className="flex items-center gap-2">
-          <img src={logo} alt="বিয়ের কথা" className="h-10 w-auto" />
-          <span className="text-xl font-bold text-gradient-gold tracking-wide">বিয়ের কথা</span>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+      <div className="container flex items-center justify-between h-16">
+        <a href="#home" className="flex items-center gap-3">
+          <img src={LOGO} alt="Dream Of Memories লোগো" className="h-10 w-auto" />
+          <span className="text-xl font-bold gold-text">Dream Of Memories</span>
         </a>
-
-        {/* Desktop */}
-        <ul className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
-            <li key={item.href}>
-              <a
-                href={item.href}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
-              >
-                {item.label}
-              </a>
-            </li>
+        <div className="hidden lg:flex items-center gap-5">
+          {links.map((l) => (
+            <a key={l.href} href={l.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              {l.label}
+            </a>
           ))}
-        </ul>
-
-        {/* Mobile toggle */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-foreground"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+        </div>
+        <button className="lg:hidden text-foreground" onClick={() => setOpen(!open)} aria-label="মেনু">
+          {open ? <X /> : <Menu />}
         </button>
       </div>
-
-      {/* Mobile menu */}
-      {isOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-lg border-b border-border">
-          <ul className="flex flex-col items-center gap-4 py-6">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="text-foreground hover:text-primary transition-colors"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+      {open && (
+        <div className="lg:hidden bg-card border-t border-border px-6 py-4 flex flex-col gap-3">
+          {links.map((l) => (
+            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-muted-foreground hover:text-primary">
+              {l.label}
+            </a>
+          ))}
         </div>
       )}
     </nav>
