@@ -28,9 +28,10 @@ const Footer = () => (
       <div>
         <h3 className="font-bold mb-4 gold-text">যোগাযোগ</h3>
         <ul className="space-y-3 text-muted-foreground">
-          <li className="flex gap-3 items-center"><Phone className="w-4 h-4 text-primary" />01890-189901</li>
-          <li className="flex gap-3 items-center"><Mail className="w-4 h-4 text-primary" />biyerkotha444@gmail.com</li>
-          <li className="flex gap-3 items-center"><MapPin className="w-4 h-4 text-primary" />Mirer Bazar, Pubail, Gazipur</li>
+          <li className="flex gap-3 items-center"><Phone className="w-4 h-4 text-primary shrink-0" /><a href="tel:+8801991043354" className="hover:text-primary">01991-043354</a></li>
+          <li className="flex gap-3 items-center"><Phone className="w-4 h-4 text-primary shrink-0" /><a href="tel:+8801787873629" className="hover:text-primary">01787-873629</a></li>
+          <li className="flex gap-3 items-center"><Mail className="w-4 h-4 text-primary shrink-0" /><a href="mailto:dreamofmemoriesbd@gmail.com" className="hover:text-primary">dreamofmemoriesbd@gmail.com</a></li>
+          <li className="flex gap-3 items-center"><MapPin className="w-4 h-4 text-primary shrink-0" />Joydevpur Rail Gate, Opposite of Prokousoli Vaban, Gazipur</li>
         </ul>
       </div>
     </div>
