@@ -23,9 +23,10 @@ const Contact = () => {
           <h2 className="section-title text-left mb-6">যোগাযোগ <span className="gold-text">করুন</span></h2>
           <p className="text-muted-foreground mb-8">আপনার অনুষ্ঠানের বিস্তারিত জানান, আমরা দ্রুত যোগাযোগ করব।</p>
           <ul className="space-y-5">
-            <li className="flex gap-4 items-center"><Phone className="text-primary" /><span>01890-189901</span></li>
-            <li className="flex gap-4 items-center"><Mail className="text-primary" /><span>biyerkotha444@gmail.com</span></li>
-            <li className="flex gap-4 items-center"><MapPin className="text-primary" /><span>Mirer Bazar, Pubail, Gazipur</span></li>
+            <li className="flex gap-4 items-center"><Phone className="w-5 h-5 text-primary shrink-0" /><a href="tel:+8801991043354" className="hover:text-primary">01991-043354</a></li>
+            <li className="flex gap-4 items-center"><Phone className="w-5 h-5 text-primary shrink-0" /><a href="tel:+8801787873629" className="hover:text-primary">01787-873629</a></li>
+            <li className="flex gap-4 items-center"><Mail className="w-5 h-5 text-primary shrink-0" /><a href="mailto:dreamofmemoriesbd@gmail.com" className="hover:text-primary">dreamofmemoriesbd@gmail.com</a></li>
+            <li className="flex gap-4 items-center"><MapPin className="w-5 h-5 text-primary shrink-0" /><span>Joydevpur Rail Gate, Opposite of Prokousoli Vaban, Gazipur</span></li>
           </ul>
         </div>
         <form onSubmit={submit} className="space-y-4 bg-background rounded-2xl p-8 gold-border">
