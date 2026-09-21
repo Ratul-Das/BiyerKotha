@@ -12,7 +12,7 @@ const Contact = () => {
     e.preventDefault();
     const subject = encodeURIComponent(`নতুন বুকিং অনুরোধ — ${form.name}`);
     const body = encodeURIComponent(`নাম: ${form.name}\nফোন: ${form.phone}\n\nবার্তা:\n${form.message}`);
-    window.location.href = `mailto:biyerkotha3@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:dreamofmemoriesbd@gmail.com?subject=${subject}&body=${body}`;
     toast({ title: "ধন্যবাদ!", description: "আপনার ইমেইল অ্যাপে বার্তাটি প্রস্তুত করা হয়েছে।" });
   };
 
